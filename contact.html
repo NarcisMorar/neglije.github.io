@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Neglije</title>
+  <!-- stylesheet css -->
+  <link rel="stylesheet type="text/css" href="css/style.css"">
+  <link rel="stylesheet type="text/css" href="css/contact.css"">
+  <link rel="stylesheet type="text/css" href="js/custom.js"">
+ <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--  <script type="text/javascript">
+            function checkStuff(){
+              var name = document.form1.name;
+              var email = document.form1.email;
+              var message = document.form1.message;
+              var msg = document.getElementById('msg');
+
+              if(name.value == ""){
+                msg.innerHTML = "Name cannot be blank";
+                name.focus();
+                return false;
+              } else {
+                msg.innerHTML = "";
+              }
+
+              if(email.value == ""){
+                msg.innerHTML = "Email cannot be blank";
+                name.focus();
+                return false;
+              } else {
+                msg.innerHTML = "";
+              }
+              var re = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/img;
+              if(!re.test(email.value)){
+                msg.innerHTML = "Please enter a valid email";
+                email.focus();
+                return false;
+              }else {
+                msg.innerHTML = "";
+              }
+
+              if(message.value == ""){
+                msg.innerHTML = "Please leave your message";
+                message.focus();
+                return false;
+              }else {
+                msg.innerHTML = "";
+              }
+
+
+              if(msg.style.display === 'block'){
+                msg.style.display = 'none';
+              }else {
+                msg.style.display = 'block';
+                return false;
+              }
+            }
+       </script>   -->
+
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse">
+  <div id="Maindiv">
+      <div id="navdiv">
+  <ul>
+    <h1> Neglije </h1>
+    <li class="current"><a href="contact.html" data-content="Contact">Contact</a></li>
+    <li><a href="aboutus.html" data-content="About Us">About Us</a></li>
+    <li><a href="index.html" data-content="Home">Home</a></li>
+  </ul>
+
+  <form action="https://formspree.io/narcismorar@gmail.com"
+        method="POST">
+      <input type="text" name="name">
+      <input type="email" name="_replyto">
+      <input type="submit" value="Send">
+  </form>
+
+<!--  <form action="" method="post" onsubmit="returncheckStuff()">
+    <input id="name" class="feedback" placeholder="Name" required>
+    <input id="email" class="feedback" placeholder="Email Address" type="email" required>
+    <textarea id="message" class="feedback" placeholder="write your message here" rows="10" required></textarea>
+    <input class="mybtn" type="submit" value="SUBMIT"><span id="status"></span>
+  </form> -->
+
+
+
+<!-- footer section -->
+<footer>
+  <p>Copyright &copy; 2018 Neglije</p>
+    <ul class="social-icons">
+      <li><a href="#" target="_blank" class="fa fa-facebook"></a></li>
+      <li><a href="#" target="_blank" class="fa fa-instagram"></a></li>
+    </ul>
+</footer>
+
+  <!-- javascript js -->
+  <script src="js/jquery.js"></script>
+  <script src="js/custom.js"></script>
+
+</body>
+</html>
