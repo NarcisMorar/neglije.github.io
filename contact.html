@@ -9,7 +9,7 @@
   <link rel="stylesheet type="text/css" href="js/custom.js"">
  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!--  <script type="text/javascript">
+  <script type="text/javascript">
             function checkStuff(){
               var name = document.form1.name;
               var email = document.form1.email;
@@ -56,7 +56,7 @@
                 return false;
               }
             }
-       </script>   -->
+       </script>
 
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse">
@@ -69,21 +69,20 @@
     <li><a href="index.html" data-content="Home">Home</a></li>
   </ul>
 
-  <form action="https://formspree.io/narcismorar@gmail.com"
-        method="POST">
-      <input type="text" name="name">
-      <input type="email" name="_replyto">
-      <input type="submit" value="Send">
+  <form action="https://formspree.io/narcismorar@gmail.com" method="POST" onsubmit="submitFrom(); return false;">
+        <input id="name" name="name" type="text" class="feedback-input" placeholder="Name" required />
+        <input id="email" name="email" type="text" class="feedback-input" placeholder="Email" required />
+     <p><textarea id="message" name="text" class="feedback-input" placeholder="Comment" required></textarea></p>
+        <input id="button" class="submit-btn" type="submit" value="SUBMIT"><span id="status"></span>
   </form>
 
-<!--  <form action="" method="post" onsubmit="returncheckStuff()">
-    <input id="name" class="feedback" placeholder="Name" required>
-    <input id="email" class="feedback" placeholder="Email Address" type="email" required>
-    <textarea id="message" class="feedback" placeholder="write your message here" rows="10" required></textarea>
-    <input class="mybtn" type="submit" value="SUBMIT"><span id="status"></span>
-  </form> -->
+  <div class="spinner">
+  <div class="bounce1"></div>
+  <div class="bounce2"></div>
+  <div class="bounce3"></div>
+</div>
 
-
+<h1 class="submit-feedback">YOUR FORM HAS BEEN SENT</h1>
 
 <!-- footer section -->
 <footer>
