@@ -96,7 +96,6 @@ h1 {
   justify-content:center;
   background: #f2f2f2;
   overflow: auto;
-  justify-content: flex-end;
 }
 .gallery{
   margin:5px;
