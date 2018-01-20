@@ -2,30 +2,33 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Neglije</title>
-
-    <!-- stylesheet css -->
-   <link rel="stylesheet type="text/css" href="css/style.css"">
-   <link rel="stylesheet type="text/css" href="js/custom.js"">
-   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
+    <title>Neglije | Home</title>
+    <link rel="stylesheet" href="css/flexboxgrid.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body data-spy="scroll" data-target=".navbar-collapse">
+  <body>
+    <!-- HEADER -->
+    <header id="main-header">
+      <div class="container">
+        <div class="row end-sm end-md end-lg center-xs middle-xs middle-sm middle-md middle-lg">
+          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <h1><span class="primary-text">Neglije</span>.Ro</h1>
+          </div>
+          <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+            <nav id="navbar">
+              <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
 
-    <div id="Maindiv">
-    <div id="navdiv">
-
-       <h1> Neglije </h1>
-
-     <ul>
-        <li><a href="contact.html" data-content="Contact">Contact</a></li>
-        <li><a href="aboutus.html" data-content="About Us">About Us</a></li>
-        <li class="current"><a href="index.html" data-content="Home">Home</a></li>
-      </ul>
-   </div>
- </div>
-
-<!-- <div class="container">
+    <div class="gal">
 
       <div class="gallery">
          <a href="img/poza1.jpg"><img src="img/poza1.jpg"></a>
@@ -71,19 +74,46 @@
                <a href="img/poza9.jpg"><img src="img/poza9.jpg"></a>
                  <div class="desc"> Descriere </div>
       </div>
-</div>  -->
+   </div>
 
-          <!-- footer section -->
-  <footer>
-    <p>Copyright &copy; 2018 Neglije</p>
-      <ul class="social-icons">
-        <li><a href="https://www.facebook.com/pg/lenjerieNeglije/photos/?ref=page_internal" target="_blank" class="fa fa-facebook"></a></li>
-        <li><a href="#" target="_blank" class="fa fa-instagram"></a></li>
-      </ul>
-  </footer>
+    <!-- COMPANY -->
+    <section id="company">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <h4>Contact Us</h4>
+            <ul>
+              <li><i class="fa fa-phone"></i> (617) 555-5555</li>
+              <li><i class="fa fa-envelope"></i> support@apptheme.test</li>
+              <li><i class="fa fa-map"></i> Romania, Arad</li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <h4>Newsletter</h4>
+            <p>Lorem ipsum dolor sit amet</p>
+            <form>
+              <input type="text" name="email" placeholder="Enter Email">
+              <button type="submit" name="button">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- javascript js -->
-<script src="js/custom.js"></script>
+    <!-- FOOTER -->
+    <footer id="main-footer">
+      <div class="container">
+        <div class="row center-xs center-sm center-md center-lg">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <p>Copyright &copy; 2017 | AppTheme</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
   </body>
 </html>
