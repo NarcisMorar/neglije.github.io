@@ -15,14 +15,15 @@ body{
   overflow: auto;
 }
 .gallery{
-  margin:10px;
+  margin:10px 50px;
   border:1px solid #ccc;
   float: left;
   padding: 2px;
   width: 390px;
 }
-.gallery:hover{
+.gallery img:hover{
   border:1px solid #777;
+  transform: scale(1.1);
 }
 .gallery img{
     width: 100%;
@@ -196,7 +197,7 @@ img{
   background: #90c3b0;
   border-radius: 50%;
   color: #fff;
-  text-decoration: none;    
+  text-decoration: none;
   font-size: 18px;
   width: 40px;
   height: 40px;
