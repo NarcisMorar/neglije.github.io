@@ -9,16 +9,15 @@ body{
 .gal{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content:center;
-  overflow: auto;
+  justify-content:space-around;
+  flex-flow: wrap;
 }
 .gallery{
-  margin:10px 50px;
+  margin:1px 5px;
   border:1px solid #ccc;
   float: left;
   padding: 2px;
-  width: 390px;
+  width: 350px;
 }
 .gallery img:hover{
   border:1px solid #777;
@@ -271,5 +270,16 @@ img{
 }
 
 @media only screen and (max-width: 819px) and (orientation: landscape) {
-  overflow-x :hidden!important;
+}
+
+@media screen and (max-width:1200px) {
+  .gallery img{
+    width: 40%;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .gallery img{
+    width: 90%;
+  }
 }
